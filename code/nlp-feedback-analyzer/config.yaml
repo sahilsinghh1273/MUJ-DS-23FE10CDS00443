@@ -1,0 +1,24 @@
+# Runtime configuration for the Feedback Analyzer
+llm:
+  provider: xai
+  base_url: https://api.x.ai/v1
+  model: grok-beta   # Set model name (e.g. grok-2-latest or grok-beta)
+  max_tokens: 700
+  temperature: 0.0                    # deterministic output for classification
+  timeout_seconds: 30
+  max_retries: 4                      # exponential backoff on 429 / 5xx / network errors
+  backoff_base_seconds: 1.0
+
+pipeline:
+  max_workers: 5                      # parallel API calls in batch mode
+  text_column: feedback               # default CSV column holding the text
+  max_input_chars: 2000               # truncate very long inputs to control cost
+  repair_attempts: 1                  # extra LLM call if the JSON is malformed
+
+cache:
+  enabled: true
+  path: .cache/results.json
+
+paths:
+  prompts: prompts.yaml
+  output_dir: output

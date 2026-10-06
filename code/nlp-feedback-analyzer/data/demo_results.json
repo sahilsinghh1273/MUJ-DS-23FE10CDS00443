@@ -1,0 +1,322 @@
+[
+  {
+    "id": 1,
+    "text": "Ordered headphones on 12 Sept, order #H9921. One earbud is dead on arrival and support hasn't answered my 3 emails. Refund me or I'm calling my bank.",
+    "feedback": "Ordered headphones on 12 Sept, order #H9921. One earbud is dead on arrival and support hasn't answered my 3 emails. Refund me or I'm calling my bank.",
+    "result": {
+      "sentiment": "negative",
+      "sentiment_score": -0.9,
+      "category": "product_quality",
+      "urgency": "high",
+      "entities": [
+        {"text": "headphones", "type": "PRODUCT"},
+        {"text": "12 Sept", "type": "DATE"},
+        {"text": "#H9921", "type": "ORDER_ID"}
+      ],
+      "key_issues": ["defective earbud", "unanswered emails", "refund threat"],
+      "summary": "Headphones arrived defective and support is unresponsive; customer threatens chargeback.",
+      "suggested_reply": "We apologize for the defective item and delayed response. We are expediting order #H9921 immediately."
+    },
+    "analysis": {
+      "sentiment": "negative",
+      "sentiment_score": -0.9,
+      "category": "product_quality",
+      "urgency": "high",
+      "entities": [
+        {"text": "headphones", "type": "PRODUCT"},
+        {"text": "12 Sept", "type": "DATE"},
+        {"text": "#H9921", "type": "ORDER_ID"}
+      ],
+      "key_issues": ["defective earbud", "unanswered emails", "refund threat"],
+      "summary": "Headphones arrived defective and support is unresponsive; customer threatens chargeback.",
+      "suggested_reply": "We apologize for the defective item and delayed response. We are expediting order #H9921 immediately."
+    },
+    "error": null,
+    "is_demo": true,
+    "demo_notice": "DEMO DATA ONLY - Hand-crafted sample for offline preview, not live model output"
+  },
+  {
+    "id": 2,
+    "text": "Absolutely love the new UI. Checkout is so much faster now. Great work team!",
+    "feedback": "Absolutely love the new UI. Checkout is so much faster now. Great work team!",
+    "result": {
+      "sentiment": "positive",
+      "sentiment_score": 0.9,
+      "category": "other",
+      "urgency": "low",
+      "entities": [],
+      "key_issues": ["faster checkout", "improved UI"],
+      "summary": "Customer expresses strong appreciation for the new UI and faster checkout speed.",
+      "suggested_reply": "Thank you for your fantastic feedback! We are thrilled to hear that checkout feels much faster."
+    },
+    "analysis": {
+      "sentiment": "positive",
+      "sentiment_score": 0.9,
+      "category": "other",
+      "urgency": "low",
+      "entities": [],
+      "key_issues": ["faster checkout", "improved UI"],
+      "summary": "Customer expresses strong appreciation for the new UI and faster checkout speed.",
+      "suggested_reply": "Thank you for your fantastic feedback! We are thrilled to hear that checkout feels much faster."
+    },
+    "error": null,
+    "is_demo": true,
+    "demo_notice": "DEMO DATA ONLY - Hand-crafted sample for offline preview, not live model output"
+  },
+  {
+    "id": 3,
+    "text": "I was charged twice for my Premium subscription this month (Rs. 499 x2). Please fix this.",
+    "feedback": "I was charged twice for my Premium subscription this month (Rs. 499 x2). Please fix this.",
+    "result": {
+      "sentiment": "negative",
+      "sentiment_score": -0.65,
+      "category": "billing",
+      "urgency": "high",
+      "entities": [
+        {"text": "Premium subscription", "type": "PRODUCT"},
+        {"text": "Rs. 499", "type": "MONEY"}
+      ],
+      "key_issues": ["duplicate charge", "refund request"],
+      "summary": "Customer was charged twice for their monthly Premium subscription and requests correction.",
+      "suggested_reply": "We are reviewing your account for duplicate charges of Rs. 499 and will resolve this promptly."
+    },
+    "analysis": {
+      "sentiment": "negative",
+      "sentiment_score": -0.65,
+      "category": "billing",
+      "urgency": "high",
+      "entities": [
+        {"text": "Premium subscription", "type": "PRODUCT"},
+        {"text": "Rs. 499", "type": "MONEY"}
+      ],
+      "key_issues": ["duplicate charge", "refund request"],
+      "summary": "Customer was charged twice for their monthly Premium subscription and requests correction.",
+      "suggested_reply": "We are reviewing your account for duplicate charges of Rs. 499 and will resolve this promptly."
+    },
+    "error": null,
+    "is_demo": true,
+    "demo_notice": "DEMO DATA ONLY - Hand-crafted sample for offline preview, not live model output"
+  },
+  {
+    "id": 4,
+    "text": "The app crashes every time I open Settings on my Pixel 8. Been like this since the last update.",
+    "feedback": "The app crashes every time I open Settings on my Pixel 8. Been like this since the last update.",
+    "result": {
+      "sentiment": "negative",
+      "sentiment_score": -0.7,
+      "category": "technical_issue",
+      "urgency": "high",
+      "entities": [
+        {"text": "Settings", "type": "PRODUCT"},
+        {"text": "Pixel 8", "type": "PRODUCT"}
+      ],
+      "key_issues": ["crash on launch", "Pixel 8 crash", "recent update bug"],
+      "summary": "App crashes when opening Settings on Pixel 8 following the latest release.",
+      "suggested_reply": "We are investigating the Settings crash on Pixel 8 and working on an immediate hotfix."
+    },
+    "analysis": {
+      "sentiment": "negative",
+      "sentiment_score": -0.7,
+      "category": "technical_issue",
+      "urgency": "high",
+      "entities": [
+        {"text": "Settings", "type": "PRODUCT"},
+        {"text": "Pixel 8", "type": "PRODUCT"}
+      ],
+      "key_issues": ["crash on launch", "Pixel 8 crash", "recent update bug"],
+      "summary": "App crashes when opening Settings on Pixel 8 following the latest release.",
+      "suggested_reply": "We are investigating the Settings crash on Pixel 8 and working on an immediate hotfix."
+    },
+    "error": null,
+    "is_demo": true,
+    "demo_notice": "DEMO DATA ONLY - Hand-crafted sample for offline preview, not live model output"
+  },
+  {
+    "id": 5,
+    "text": "Delivery to Jaipur took 11 days instead of the promised 3. Package was fine though.",
+    "feedback": "Delivery to Jaipur took 11 days instead of the promised 3. Package was fine though.",
+    "result": {
+      "sentiment": "mixed",
+      "sentiment_score": -0.2,
+      "category": "delivery",
+      "urgency": "low",
+      "entities": [
+        {"text": "Jaipur", "type": "LOCATION"},
+        {"text": "11 days", "type": "DATE"},
+        {"text": "3 days", "type": "DATE"}
+      ],
+      "key_issues": ["delivery delay", "intact package"],
+      "summary": "Delivery took 11 days instead of 3, though package contents arrived in good condition.",
+      "suggested_reply": "We are glad your package arrived safely, but apologize for the transit delay to Jaipur."
+    },
+    "analysis": {
+      "sentiment": "mixed",
+      "sentiment_score": -0.2,
+      "category": "delivery",
+      "urgency": "low",
+      "entities": [
+        {"text": "Jaipur", "type": "LOCATION"},
+        {"text": "11 days", "type": "DATE"},
+        {"text": "3 days", "type": "DATE"}
+      ],
+      "key_issues": ["delivery delay", "intact package"],
+      "summary": "Delivery took 11 days instead of 3, though package contents arrived in good condition.",
+      "suggested_reply": "We are glad your package arrived safely, but apologize for the transit delay to Jaipur."
+    },
+    "error": null,
+    "is_demo": true,
+    "demo_notice": "DEMO DATA ONLY - Hand-crafted sample for offline preview, not live model output"
+  },
+  {
+    "id": 6,
+    "text": "Would be nice to have an export-to-PDF option for reports.",
+    "feedback": "Would be nice to have an export-to-PDF option for reports.",
+    "result": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.1,
+      "category": "feature_request",
+      "urgency": "low",
+      "entities": [
+        {"text": "PDF", "type": "PRODUCT"}
+      ],
+      "key_issues": ["pdf export", "reports feature"],
+      "summary": "Customer requests an export-to-PDF functionality for reports.",
+      "suggested_reply": "Thank you for the suggestion! We have added PDF report export to our product roadmap."
+    },
+    "analysis": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.1,
+      "category": "feature_request",
+      "urgency": "low",
+      "entities": [
+        {"text": "PDF", "type": "PRODUCT"}
+      ],
+      "key_issues": ["pdf export", "reports feature"],
+      "summary": "Customer requests an export-to-PDF functionality for reports.",
+      "suggested_reply": "Thank you for the suggestion! We have added PDF report export to our product roadmap."
+    },
+    "error": null,
+    "is_demo": true,
+    "demo_notice": "DEMO DATA ONLY - Hand-crafted sample for offline preview, not live model output"
+  },
+  {
+    "id": 7,
+    "text": "Customer care agent Priya was very patient and solved my login problem in minutes. Thank you!",
+    "feedback": "Customer care agent Priya was very patient and solved my login problem in minutes. Thank you!",
+    "result": {
+      "sentiment": "positive",
+      "sentiment_score": 0.85,
+      "category": "customer_support",
+      "urgency": "low",
+      "entities": [
+        {"text": "Priya", "type": "PERSON"}
+      ],
+      "key_issues": ["quick login resolution", "excellent service"],
+      "summary": "Customer praises agent Priya for patient and rapid resolution of login issues.",
+      "suggested_reply": "We appreciate your kind words! We will gladly pass your praise along to Priya."
+    },
+    "analysis": {
+      "sentiment": "positive",
+      "sentiment_score": 0.85,
+      "category": "customer_support",
+      "urgency": "low",
+      "entities": [
+        {"text": "Priya", "type": "PERSON"}
+      ],
+      "key_issues": ["quick login resolution", "excellent service"],
+      "summary": "Customer praises agent Priya for patient and rapid resolution of login issues.",
+      "suggested_reply": "We appreciate your kind words! We will gladly pass your praise along to Priya."
+    },
+    "error": null,
+    "is_demo": true,
+    "demo_notice": "DEMO DATA ONLY - Hand-crafted sample for offline preview, not live model output"
+  },
+  {
+    "id": 8,
+    "text": "The product is okay I guess. Nothing special, nothing wrong either.",
+    "feedback": "The product is okay I guess. Nothing special, nothing wrong either.",
+    "result": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.0,
+      "category": "product_quality",
+      "urgency": "low",
+      "entities": [],
+      "key_issues": ["mediocre experience"],
+      "summary": "Customer finds the product average with neither positive nor negative remarks.",
+      "suggested_reply": "Thank you for sharing your feedback. Please let us know if there is anything we can improve."
+    },
+    "analysis": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.0,
+      "category": "product_quality",
+      "urgency": "low",
+      "entities": [],
+      "key_issues": ["mediocre experience"],
+      "summary": "Customer finds the product average with neither positive nor negative remarks.",
+      "suggested_reply": "Thank you for sharing your feedback. Please let us know if there is anything we can improve."
+    },
+    "error": null,
+    "is_demo": true,
+    "demo_notice": "DEMO DATA ONLY - Hand-crafted sample for offline preview, not live model output"
+  },
+  {
+    "id": 9,
+    "text": "Food delivery app showed my order as delivered but I never received it. Rider's phone is switched off. I'm hungry and angry.",
+    "feedback": "Food delivery app showed my order as delivered but I never received it. Rider's phone is switched off. I'm hungry and angry.",
+    "result": {
+      "sentiment": "negative",
+      "sentiment_score": -0.95,
+      "category": "delivery",
+      "urgency": "high",
+      "entities": [],
+      "key_issues": ["missing order", "unreachable rider", "false delivery status"],
+      "summary": "Customer never received food order despite delivered status, and delivery rider is unreachable.",
+      "suggested_reply": "We are terribly sorry your food was not delivered. We are investigating and escalating this immediately."
+    },
+    "analysis": {
+      "sentiment": "negative",
+      "sentiment_score": -0.95,
+      "category": "delivery",
+      "urgency": "high",
+      "entities": [],
+      "key_issues": ["missing order", "unreachable rider", "false delivery status"],
+      "summary": "Customer never received food order despite delivered status, and delivery rider is unreachable.",
+      "suggested_reply": "We are terribly sorry your food was not delivered. We are investigating and escalating this immediately."
+    },
+    "error": null,
+    "is_demo": true,
+    "demo_notice": "DEMO DATA ONLY - Hand-crafted sample for offline preview, not live model output"
+  },
+  {
+    "id": 10,
+    "text": "asdf qwerty buy cheap watches www.spam.example",
+    "feedback": "asdf qwerty buy cheap watches www.spam.example",
+    "result": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.0,
+      "category": "other",
+      "urgency": "low",
+      "entities": [
+        {"text": "www.spam.example", "type": "ORG"}
+      ],
+      "key_issues": ["spam submission"],
+      "summary": "Irrelevant promotional spam text containing an external web link.",
+      "suggested_reply": ""
+    },
+    "analysis": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.0,
+      "category": "other",
+      "urgency": "low",
+      "entities": [
+        {"text": "www.spam.example", "type": "ORG"}
+      ],
+      "key_issues": ["spam submission"],
+      "summary": "Irrelevant promotional spam text containing an external web link.",
+      "suggested_reply": ""
+    },
+    "error": null,
+    "is_demo": true,
+    "demo_notice": "DEMO DATA ONLY - Hand-crafted sample for offline preview, not live model output"
+  }
+]

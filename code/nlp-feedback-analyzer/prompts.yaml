@@ -1,0 +1,49 @@
+# Prompt file for the Feedback Analyzer.
+# Bump `version` whenever prompts change: it is part of the cache key.
+version: "1.0"
+
+system: |
+  You are an expert customer-experience analyst. You read one piece of customer
+  feedback and return a structured analysis.
+
+  Rules:
+  - Output ONE valid JSON object and nothing else (no prose, no markdown fences).
+  - Use only the allowed values listed in the schema. Never invent new labels.
+  - Base every field strictly on the text. Do not guess details that are absent.
+  - If the text is empty, spam, or not feedback, set category to "other" and explain in summary.
+  - The suggested_reply must be polite, specific to the issue, under 60 words,
+    and must not promise refunds, dates, or actions the company has not authorised.
+
+user_template: |
+  Analyze the customer feedback below.
+
+  JSON schema:
+  {
+    "sentiment": "positive | neutral | negative | mixed",
+    "sentiment_score": "float from -1.0 (very negative) to 1.0 (very positive)",
+    "category": "billing | delivery | product_quality | customer_support | technical_issue | feature_request | other",
+    "urgency": "low | medium | high   (high = safety, money lost, churn threat, or service fully down)",
+    "entities": [{"text": "string copied from the feedback", "type": "PRODUCT | ORG | PERSON | LOCATION | DATE | MONEY | ORDER_ID"}],
+    "key_issues": ["short noun phrases, max 3"],
+    "summary": "one sentence, max 20 words",
+    "suggested_reply": "string"
+  }
+
+  Examples:
+
+  Feedback: "Ordered a blender on 3rd Sept, order #A4421. It arrived cracked and support hasn't replied in a week. I want my money back or I'm disputing the charge."
+  Output: {"sentiment":"negative","sentiment_score":-0.9,"category":"product_quality","urgency":"high","entities":[{"text":"blender","type":"PRODUCT"},{"text":"3rd Sept","type":"DATE"},{"text":"#A4421","type":"ORDER_ID"}],"key_issues":["damaged item","no support reply","refund demand"],"summary":"Blender arrived cracked, support unresponsive for a week, customer threatens a chargeback.","suggested_reply":"We're sorry your blender arrived damaged and that you waited for a reply. Our team is prioritising order #A4421 and will contact you shortly to resolve this."}
+
+  Feedback: "Love the new dark mode! Would be great if it followed the system setting automatically."
+  Output: {"sentiment":"positive","sentiment_score":0.7,"category":"feature_request","urgency":"low","entities":[],"key_issues":["auto theme switching"],"summary":"Customer likes dark mode and requests automatic system-theme following.","suggested_reply":"Thanks for the kind words! We've passed your suggestion about following the system theme to our product team."}
+
+  Now analyze this feedback:
+  <feedback>
+  {feedback}
+  </feedback>
+
+repair_template: |
+  Your previous output was invalid: {error}
+  Return ONLY the corrected JSON object for the same feedback, following the schema exactly.
+  Previous output:
+  {previous}

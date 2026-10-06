@@ -1,0 +1,25 @@
+feedback,sentiment,category,urgency
+"Oh wonderful, another unexplained $50 subscription charge on my card after I cancelled twice. Absolutely thrilled with this magical recurring fee!",negative,billing,high
+"Outstanding customer service! Being put on hold for two hours just to have the agent hang up on me is truly a world-class experience.",negative,customer_support,high
+"Huge thanks for delivering my fragile glassware in literal pieces three weeks late. Packaging it in a paper bag was pure genius.",negative,delivery,medium
+"Brilliant update guys! The app crashing immediately upon startup on iOS 18 is definitely my favorite new feature.",negative,technical_issue,high
+"The noise cancellation is superb and the soundstage is deep, but the synthetic leather headband started peeling off within two weeks.",mixed,product_quality,medium
+"The courier arrived two days earlier than expected which was nice, but the courier tossed the package over the front gate into the rain.",mixed,delivery,low
+"The support representative was very polite and tried hard, but in the end they couldn't solve my account sync issue at all.",mixed,customer_support,medium
+"Really enjoying the newly introduced dark mode, though it would be far better if it automatically synced with system theme settings.",mixed,feature_request,low
+"The transparent pricing and instant receipt generation make invoicing clients so easy. Never had a billing discrepancy.",positive,billing,low
+"Ordered yesterday afternoon and received it at my doorstep by 10 AM today. Superbly fast dispatch and spotless packaging!",positive,delivery,low
+"Built like a tank and works flawlessly every single day. One of the best kitchen appliances I have ever purchased.",positive,product_quality,low
+"Agent Rahul walked me through the setup step-by-step with extreme patience. Resolved my issue in under ten minutes.",positive,customer_support,low
+"The latest patch completely resolved the Bluetooth disconnect glitch on Windows 11. Everything connects seamlessly now.",positive,technical_issue,low
+"Love the new dashboard layout! Would you consider adding a CSV export button for weekly analytics summaries?",positive,feature_request,low
+"Kudos to the entire team for the insightful webinar on machine learning fundamentals. Looking forward to the next session!",positive,other,low
+"Could someone confirm whether annual subscriptions auto-renew at the discounted rate or standard price?",neutral,billing,medium
+"Tracking status shows package arrived at the local transit hub in Jaipur this morning. Awaiting out for delivery status.",neutral,delivery,low
+"The fabric texture is average and matches the product photo. Nothing particularly impressive or bad about it.",neutral,product_quality,low
+"Submitted ticket #94821 regarding tax invoice download. Waiting for initial response from billing team.",neutral,customer_support,low
+"The API endpoint returns HTTP 429 when sending more than 30 requests per minute. Checking if this is the documented rate limit.",neutral,technical_issue,medium
+"Is there an option to configure multi-factor authentication using hardware security keys like YubiKey?",neutral,feature_request,low
+"Please update the registered physical office address in your terms and conditions page.",neutral,other,low
+"The battery expanded and cracked the device casing overnight while on the official charger. This is a severe fire hazard!",negative,product_quality,high
+"Our enterprise production database was wiped during your scheduled server migration without any prior backup. Immediate executive escalation required.",negative,other,high
