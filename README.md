@@ -4,7 +4,7 @@
 
 | Field | Details |
 |---|---|
-| **Name** | Sahil |
+| **Name** | Sahil Kumar Singh |
 | **Registration Number** | 23FE10CDS00443 |
 | **Branch** | B.Tech Computer Science Engineering (Data Science) |
 | **Batch** | 2023-2027 (Batch F) |
